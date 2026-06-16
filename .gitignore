@@ -1,12 +1,4 @@
-__pycache__/
-*.py[cod]
+.agentbase*
 .env
 .greennode.json
-.agentbase-state.json
-venv/
-.venv/
-*.egg-info/
-dist/
-build/
-.chainlit/
-chainlit.md
+.claude
