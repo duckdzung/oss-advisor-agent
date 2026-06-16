@@ -1,0 +1,11 @@
+{
+  "name": "balanced",
+  "weights": {
+    "health": 0.20,
+    "adoption": 0.15,
+    "security": 0.25,
+    "stability": 0.15,
+    "compatibility": 0.10,
+    "licensing": 0.15
+  }
+}

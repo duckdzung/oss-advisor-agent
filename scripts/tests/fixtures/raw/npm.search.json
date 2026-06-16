@@ -1,0 +1,4 @@
+{ "objects": [
+  { "package": { "name": "pg-pool", "version": "3.6.1" } },
+  { "package": { "name": "generic-pool", "version": "3.9.0" } }
+] }

@@ -1,0 +1,28 @@
+{
+  "coordinates": { "ecosystem": "maven", "name": "com.zaxxer:HikariCP", "version": "5.1.0" },
+  "signals": {
+    "health.last_commit_days": { "value": 20, "source": "github", "citations": [{"url": "https://github.com/brettwooldridge/HikariCP"}] },
+    "health.releases_per_year": { "value": 6, "source": "registry", "citations": [] },
+    "health.active_maintainers": { "value": 4, "source": "github", "citations": [] },
+    "health.bus_factor": { "value": 3, "source": "github", "citations": [] },
+    "adoption.stars": { "value": 20000, "source": "github", "citations": [] },
+    "adoption.forks": { "value": 3000, "source": "github", "citations": [] },
+    "adoption.downloads_recent": { "value": 5000000, "source": "registry", "citations": [] },
+    "adoption.dependents": { "value": 8000, "source": "depsdev", "citations": [] },
+    "security.osv_queried": { "value": true, "source": "osv", "citations": [] },
+    "security.open_cves": { "value": 0, "source": "osv", "citations": [] },
+    "security.max_cvss": { "value": null, "source": "osv", "citations": [] },
+    "security.scorecard": { "value": 7.5, "source": "depsdev", "citations": [] },
+    "security.has_security_md": { "value": true, "source": "github", "citations": [] },
+    "stability.semver_compliant": { "value": true, "source": "registry", "citations": [] },
+    "stability.breaking_changes_per_year": { "value": 0, "source": "github", "citations": [] },
+    "stability.major_version_churn": { "value": 0.3, "source": "registry", "citations": [] },
+    "stability.has_migration_guides": { "value": true, "source": "github", "citations": [] },
+    "compatibility.runtime_constraint_ok": { "value": true, "source": "registry", "citations": [] },
+    "compatibility.transitive_conflict_risk": { "value": 0.1, "source": "depsdev", "citations": [] },
+    "licensing.license": { "value": "Apache-2.0", "source": "depsdev", "citations": [] },
+    "licensing.policy_compliant": { "value": true, "source": "policy", "citations": [] }
+  },
+  "sources_used": ["github", "registry", "depsdev", "osv"],
+  "sources_degraded": []
+}

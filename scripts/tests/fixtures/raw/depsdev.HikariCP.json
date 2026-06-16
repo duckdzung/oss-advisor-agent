@@ -1,0 +1,10 @@
+{
+  "version": {
+    "licenses": ["Apache-2.0"],
+    "projects": [{ "type": "GITHUB", "name": "brettwooldridge/HikariCP" }]
+  },
+  "relatedProjects": {
+    "dependentCount": 8123,
+    "scorecard": { "overallScore": 7.8 }
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "coordinates": { "ecosystem": "maven", "name": "com.zaxxer:HikariCP", "version": "5.1.0" },
+    "criteria": { "health": {"score":88,"coverage":1,"signals":[]}, "adoption": {"score":91,"coverage":1,"signals":[]}, "security": {"score":79,"coverage":1,"signals":[]}, "stability": {"score":95,"coverage":1,"signals":[]}, "compatibility": {"score":90,"coverage":1,"signals":[]}, "licensing": {"score":100,"coverage":1,"signals":[]} },
+    "overall": 89.2, "confidence": "high", "verdict": "adopt", "risks": [], "flags": [],
+    "recommendation": "", "profile": "balanced", "generated_at": null
+  },
+  {
+    "coordinates": { "ecosystem": "maven", "name": "commons-dbcp:commons-dbcp", "version": "1.4" },
+    "criteria": { "health": {"score":20,"coverage":1,"signals":[]}, "adoption": {"score":60,"coverage":1,"signals":[]}, "security": {"score":40,"coverage":1,"signals":[]}, "stability": {"score":50,"coverage":1,"signals":[]}, "compatibility": {"score":55,"coverage":1,"signals":[]}, "licensing": {"score":100,"coverage":1,"signals":[]} },
+    "overall": 44.0, "confidence": "medium", "verdict": "avoid",
+    "risks": ["Abandoned (>2y no commits) with open vulnerabilities"], "flags": ["hardfail:abandoned_with_cves"],
+    "recommendation": "", "profile": "balanced", "generated_at": null
+  }
+]

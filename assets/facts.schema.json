@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OSS Advisor facts",
+  "type": "object",
+  "required": ["coordinates", "signals"],
+  "properties": {
+    "coordinates": {
+      "type": "object",
+      "required": ["ecosystem", "name"],
+      "properties": {
+        "ecosystem": { "type": "string", "enum": ["npm", "pypi", "maven", "go", "cargo", "nuget"] },
+        "name": { "type": "string" },
+        "version": { "type": ["string", "null"] }
+      }
+    },
+    "signals": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value"],
+        "properties": {
+          "value": { "type": ["number", "string", "boolean", "null"] },
+          "source": { "type": "string" },
+          "citations": {
+            "type": "array",
+            "items": { "type": "object", "properties": { "url": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "sources_used": { "type": "array", "items": { "type": "string" } },
+    "sources_degraded": { "type": "array", "items": { "type": "string" } },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "disallowed_licenses": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

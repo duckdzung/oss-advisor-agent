@@ -1,0 +1,5 @@
+requests==2.31.0
+flask>=2.0
+# a comment
+numpy
+-e git+https://github.com/x/y.git#egg=z

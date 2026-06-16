@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OSS Advisor result",
+  "type": "object",
+  "required": ["coordinates", "criteria", "overall", "confidence", "verdict", "risks", "profile"],
+  "properties": {
+    "coordinates": { "type": "object" },
+    "criteria": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["score", "coverage", "signals"],
+        "properties": {
+          "score": { "type": ["number", "null"] },
+          "coverage": { "type": "number" },
+          "signals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "value", "normalized"],
+              "properties": {
+                "name": { "type": "string" },
+                "value": {},
+                "normalized": { "type": ["number", "null"] },
+                "citations": { "type": "array" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "overall": { "type": ["number", "null"] },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+    "verdict": { "type": "string", "enum": ["adopt", "adopt-with-caution", "avoid"] },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "flags": { "type": "array", "items": { "type": "string" } },
+    "recommendation": { "type": "string" },
+    "profile": { "type": "string" },
+    "generated_at": { "type": ["string", "null"] }
+  }
+}

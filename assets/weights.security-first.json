@@ -1,0 +1,11 @@
+{
+  "name": "security-first",
+  "weights": {
+    "health": 0.15,
+    "adoption": 0.05,
+    "security": 0.45,
+    "stability": 0.10,
+    "compatibility": 0.10,
+    "licensing": 0.15
+  }
+}

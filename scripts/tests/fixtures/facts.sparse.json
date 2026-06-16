@@ -1,0 +1,9 @@
+{
+  "coordinates": { "ecosystem": "pypi", "name": "obscure-lib", "version": "1.0.0" },
+  "signals": {
+    "adoption.stars": { "value": 120, "source": "github", "citations": [] },
+    "licensing.license": { "value": "MIT", "source": "depsdev", "citations": [] }
+  },
+  "sources_used": ["github", "depsdev"],
+  "sources_degraded": ["osv"]
+}

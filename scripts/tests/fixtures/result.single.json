@@ -1,0 +1,19 @@
+{
+  "coordinates": { "ecosystem": "maven", "name": "com.zaxxer:HikariCP", "version": "5.1.0" },
+  "criteria": {
+    "health": { "score": 88.0, "coverage": 1.0, "signals": [] },
+    "adoption": { "score": 91.0, "coverage": 1.0, "signals": [] },
+    "security": { "score": 79.0, "coverage": 1.0, "signals": [] },
+    "stability": { "score": 95.0, "coverage": 1.0, "signals": [] },
+    "compatibility": { "score": 90.0, "coverage": 0.5, "signals": [] },
+    "licensing": { "score": 100.0, "coverage": 1.0, "signals": [] }
+  },
+  "overall": 89.2,
+  "confidence": "high",
+  "verdict": "adopt",
+  "risks": [],
+  "flags": [],
+  "recommendation": "com.zaxxer:HikariCP: Safe to adopt (overall 89/100)",
+  "profile": "balanced",
+  "generated_at": "2026-06-15T10:00:00Z"
+}

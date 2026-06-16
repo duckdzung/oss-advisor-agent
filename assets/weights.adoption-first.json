@@ -1,0 +1,11 @@
+{
+  "name": "adoption-first",
+  "weights": {
+    "health": 0.20,
+    "adoption": 0.40,
+    "security": 0.15,
+    "stability": 0.10,
+    "compatibility": 0.05,
+    "licensing": 0.10
+  }
+}

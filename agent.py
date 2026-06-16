@@ -11,8 +11,8 @@ from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
-# Resolve oss-advisor directory: env var → sibling directory relative to this file
-_default_dir = Path(__file__).parent.parent / "oss-advisor"
+# Resolve oss-advisor directory: env var → current directory (standalone)
+_default_dir = Path(__file__).parent
 OSS_ADVISOR_DIR = Path(os.environ.get("OSS_ADVISOR_DIR", str(_default_dir))).resolve()
 SCRIPTS_DIR = OSS_ADVISOR_DIR / "scripts"
 

@@ -1,0 +1,16 @@
+{
+  "coordinates": { "ecosystem": "npm", "name": "left-pad-evil", "version": "0.0.1" },
+  "signals": {
+    "health.last_commit_days": { "value": 400, "source": "github", "citations": [] },
+    "health.bus_factor": { "value": 1, "source": "github", "citations": [] },
+    "adoption.stars": { "value": 30, "source": "github", "citations": [] },
+    "security.osv_queried": { "value": true, "source": "osv", "citations": [] },
+    "security.open_cves": { "value": 3, "source": "osv", "citations": [{"url": "https://osv.dev/..."}] },
+    "security.max_cvss": { "value": 9.8, "source": "osv", "citations": [] },
+    "security.unpatched_critical": { "value": true, "source": "osv", "citations": [] },
+    "licensing.license": { "value": "GPL-3.0-only", "source": "depsdev", "citations": [] },
+    "licensing.policy_compliant": { "value": true, "source": "policy", "citations": [] }
+  },
+  "sources_used": ["github", "osv", "depsdev"],
+  "sources_degraded": []
+}
