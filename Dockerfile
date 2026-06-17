@@ -12,17 +12,16 @@ WORKDIR /app
 COPY oss-advisor-agent/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy oss-advisor scripts and assets
-COPY oss-advisor /app/oss-advisor
-
 # Copy agent application files
 COPY oss-advisor-agent/main.py .
 COPY oss-advisor-agent/agent.py .
 COPY oss-advisor-agent/chainlit_app.py .
+COPY oss-advisor-agent/scripts /app/scripts
+COPY oss-advisor-agent/assets /app/assets
 COPY oss-advisor-agent/docker-entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-ENV OSS_ADVISOR_DIR=/app/oss-advisor
+ENV OSS_ADVISOR_DIR=/app
 EXPOSE 8080
 
 ENTRYPOINT ["/entrypoint.sh"]
