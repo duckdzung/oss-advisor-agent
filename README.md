@@ -42,13 +42,15 @@ python main.py
 
 ## Build & Run Docker
 
-Build context phải là thư mục `su-ba-gent/` (parent):
+Build context phải là thư mục `su-ba-gent/` (parent). Scripts và assets được include từ source code:
 
 ```bash
 # Từ su-ba-gent/
 docker build -f oss-advisor-agent/Dockerfile -t oss-advisor-agent .
 docker run -p 8080:8080 --env-file oss-advisor-agent/.env oss-advisor-agent
 ```
+
+Mở http://localhost:8080 để dùng chatbot.
 
 ## Deploy to AgentBase
 
@@ -62,7 +64,7 @@ docker run -p 8080:8080 --env-file oss-advisor-agent/.env oss-advisor-agent
 |---|---|---|
 | `LLM_API_KEY` | Yes | API key cho LLM provider |
 | `LLM_BASE_URL` | Yes | Base URL của LLM API (OpenAI-compatible) |
-| `LLM_MODEL` | Yes | Model name (e.g. `gpt-4o`, `claude-sonnet-4-6`) |
-| `OSS_ADVISOR_DIR` | No | Path đến thư mục oss-advisor (default: `../oss-advisor`) |
+| `LLM_MODEL` | Yes | Model name (e.g. `gemini-2.5-flash`, `gpt-4o`, `qwen/qwen3-5-27b`) |
+| `OSS_ADVISOR_DIR` | No | Path đến thư mục oss-advisor (default: `/app`) |
 | `GREENNODE_CLIENT_ID` | No | GreenNode IAM client ID |
 | `GREENNODE_CLIENT_SECRET` | No | GreenNode IAM client secret |
